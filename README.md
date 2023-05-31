@@ -1,5 +1,11 @@
 # Check-COVID
 
+## Paper
+[Check-COVID: Fact-Checking COVID-19 News Claims with Scientific Evidence](https://arxiv.org/abs/2305.18265)
+
+Accpeted as ACL2023 Findings
+[Arxiv](https://arxiv.org/abs/2305.18265)
+
 ## Abstract
 We present a new fact-checking benchmark,
 Check-COVID, that requires systems to verify
@@ -9,23 +15,20 @@ paired with sentence-level evidence from scientific journal articles and veracit
 includes both extracted (journalist-written) and
 composed (annotator-written) claims. Experiments using both a fact-checking specific system (which achieved F1
 scores of 76.99 and 69.90 respectively) and GPT-3.5 on this task reveal the difficulty of automatically fact-checking
-both claim types and the importance of in-domain data for good performance. Our data
-and models will be released publicly at [URL].
-#
+both claim types and the importance of in-domain data for good performance. 
 
-Disclaimer: All training, inference and eval code is built off of the code from [SciFact](https://github.com/allenai/scifact).
-
-#
 ## Data
-All data is included in the `CheckCOVID` directory
+All data is included in the `Check-COVID` directory
 
-- `auth` are claims drawn directly from news articles (files without this specifier in the title have claims written by annotators)
-
-- `writtenAuth` are claims written by annotators and claims drawn from news articles
-
-- `2_classes` does not include NEI examples
+- `variants_for_experiments` directory includs variatns and subsets of the dataset that were used for experiments in the paper
 
 - `abstracts` directory includes abstracts used to evaluate the rationale and full pipeline modules
+
+#
+
+Disclaimer: Training, inference and eval code is built off of the code from [SciFact](https://github.com/allenai/scifact).
+
+
 
 #
 ## Training
